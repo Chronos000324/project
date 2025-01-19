@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('AR.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Center the content */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.header h1 {
+  font-size: 2em;
+  color: #4a7c59;
+}
+
+/* Scene Description */
+.synopsis {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.synopsis h2 {
+  font-size: 1.5em;
+  color: #6c4a3a;
+  margin-bottom: 10px;
+}
+
+.synopsis p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.language-selection {
+  position: absolute;
+  top: 20px; /* Letakkan elemen induk di atas skrin */
+  right: 20px; /* Letakkan elemen di penjuru kanan atas */
+  z-index: 1000; /* Pastikan berada di atas kanvas */
+  display: flex;
+  flex-direction: column; /* Susun butang secara menegak */
+  gap: 10px; /* Jarak antara butang */
+}
+
+.language-selection button {
+  padding: 12px 24px;
+  font-size: 1em;
+  color: white;
+  background-color: #4a7c59;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.language-selection button:hover {
+  background-color: #355d3c;
+}
+
+.language-selection button:active {
+  transform: scale(0.95);
+}
+
+
+
+

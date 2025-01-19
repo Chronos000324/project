@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncy and Drone Adventure</title>
+  <link rel="stylesheet" href="./css/home-style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>Bouncy and Drone Adventure</h1>
+    </header>
+
+    <!-- Scene Description -->
+    <main class="content">
+      <div class="synopsis">
+        <h2>Synopsis</h2>
+        <p>
+          When Kampung Oklok freezes after the great clock stops, Bouncy the slime and a drone set off to find three magical gears to fix it. Their journey takes them through the melodic Music City, puzzling Maze City, and mysterious Magic Sand City.
+        </p>
+      </div>
+    </main>
+
+    <!-- Language Selection -->
+    <footer class="language-selection">
+      <h3>Select Language</h3>
+      <button class="language-btn" data-lang="en">BOOK</button>
+      <button class="language-btn" data-lang="iban">MAP</button>
+    </footer>
+
+    <div class="credits">
+      <p>Provided by:</p>
+      <p>Mohd Fazlil bin Mohd Bill</p>
+      <p>Irfan Hassan bin Mohamad Hasrizal</p>
+      <p>Oviyameenhaa A/P Chandramohan</p>
+      <p>Nuraziela Sahira binti Misal</p>
+    </div>
+  </div>
+
+  <script>
+    // Language Selection Logic
+    const languageButtons = document.querySelectorAll('.language-btn');
+
+    languageButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const selectedLanguage = button.dataset.lang; // Get the language (en/iban)
+
+        // Redirect to the correct Scene 1 version based on the selected language and correct path
+        if (selectedLanguage === "en") {
+          window.location.href = 'page/scene1-en.html'; // English version
+        } else if (selectedLanguage === "iban") {
+          window.location.href = 'page/scene1m-en.html'; // Iban version
+        }
+      });
+    });
+  </script>
+</body>
+</html>
