@@ -1,5 +1,5 @@
-//import { loadGLTF, loadAudio } from "../../libs/loader.js";
-import { loadGLTF, loadAudio } from "https://cdn.jsdelivr.net/gh/Chronos000324/artest2/libs/loader.js";
+import { loadGLTF, loadAudio } from "../../libs/loader.js";
+//import { loadGLTF, loadAudio } from "https://cdn.jsdelivr.net/gh/Chronos000324/artest2/libs/loader.js";
 
 const THREE = window.MINDAR.IMAGE.THREE;
 
