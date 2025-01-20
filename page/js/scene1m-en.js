@@ -116,8 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // English audio paths (adjust for your English audio files)
     const audioPaths = [
-      '../assets/sounds/en1.mp3',
-      '../assets/sounds/en2.mp3',
+      '../assets/sounds/en1.MP3',
+      '../assets/sounds/en2.MP3',
       '../assets/sounds/en3.mp3',
       '../assets/sounds/en4.mp3',
       '../assets/sounds/en5.mp3',
