@@ -118,15 +118,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const audioPaths = [
       '../assets/sounds/en1.MP3',
       '../assets/sounds/en2.MP3',
-      '../assets/sounds/en3.mp3',
-      '../assets/sounds/en4.mp3',
-      '../assets/sounds/en5.mp3',
-      '../assets/sounds/en6.mp3',
-      '../assets/sounds/en7.mp3',
-      '../assets/sounds/en8.mp3',
-      '../assets/sounds/en9.mp3',
-      '../assets/sounds/en10.mp3',
-      '../assets/sounds/en11.mp3',
+      '../assets/sounds/en3.MP3',
+      '../assets/sounds/en4.MP3',
+      '../assets/sounds/en5.MP3',
+      '../assets/sounds/en6.MP3',
+      '../assets/sounds/en7.MP3',
+      '../assets/sounds/en8.MP3',
+      '../assets/sounds/en9.MP3',
+      '../assets/sounds/en10.MP3',
+      '../assets/sounds/en11.MP3',
     ];
 
     // Loop through and load each model and audio
