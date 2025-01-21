@@ -1,86 +1,52 @@
-/* General Styles */
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
-  font-family: Arial, sans-serif;
-  background-color: #ffffff; /* Background color */
-  overflow: hidden; /* Prevent scrolling */
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Header Styles */
-.header {
-  text-align: center;
-}
-
-.header h1 {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #6c4a3a;
-  margin: 0;
-}
-
-/* Scanner Content Styles */
-.scanner-content {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.loading-indicator {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #ddd;
-  border-top-color: #6c4a3a;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-/* Loading Animation */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* Button Container */
 .button-container {
   display: flex;
+  justify-content: center;
   gap: 10px;
+  padding: 10px;
+  position: absolute; /* Place the buttons above the scanner */
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's above other content */
 }
 
+/* Button Styles */
 .button-container button {
-  padding: 10px 15px;
+  padding: 12px 24px;
   font-size: 1em;
-  color: #fff;
+  color: white;
   background-color: #4a7c59;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  flex: 1;
-  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .button-container button:hover {
   background-color: #355d3c;
+}
+
+.button-container button:active {
+  transform: scale(0.95);
+}
+
+/* Center the Scanner Content and Make It Full Screen */
+.scanner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Full-screen height */
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.8); /* Optional background */
+  overflow: hidden; /* Prevent unwanted scrolls */
+}
+
+/* Scanner Placeholder Styling (optional) */
+.scanner-placeholder {
+  text-align: center;
+  font-size: 1.5em;
+  color: #6c4a3a;
 }
