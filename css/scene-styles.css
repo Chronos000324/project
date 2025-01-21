@@ -1,25 +1,52 @@
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: absolute; /* Place the buttons above the scanner */
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Button Styles */
+.button-container button {
+  padding: 12px 24px;
+  font-size: 1em;
+  color: white;
+  background-color: #4a7c59;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-container button:hover {
+  background-color: #355d3c;
+}
+
+.button-container button:active {
+  transform: scale(0.95);
+}
+
 /* Center the Scanner Content and Make It Full Screen */
 .scanner-content {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 80px); /* Adjust for footer height */
+  height: 100vh; /* Full-screen height */
   margin: 0;
   padding: 0;
   background: rgba(255, 255, 255, 0.8); /* Optional background */
-  overflow: hidden; /* Prevents unwanted scrolls */
+  overflow: hidden; /* Prevent unwanted scrolls */
 }
 
-/* Adjust the footer position for smaller screens */
-.language-selection {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.9); /* Background for footer */
-  padding: 10px;
-  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+/* Scanner Placeholder Styling (optional) */
+.scanner-placeholder {
+  text-align: center;
+  font-size: 1.5em;
+  color: #6c4a3a;
 }
