@@ -9,13 +9,21 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  overflow: auto; /* Allow scrolling for smaller screens */
 }
 
 /* Center the content */
-header {
-  text-align: center;
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Header */
@@ -26,9 +34,8 @@ header {
 
 /* Scene Description */
 .synopsis {
-  margin: 20px auto;
+  margin: 20px 0;
   padding: 15px;
-  max-width: 90%; /* Adjust width for smaller screens */
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -45,16 +52,14 @@ header {
   line-height: 1.5;
 }
 
-/* Language Selection */
 .language-selection {
-  position: fixed; /* Ensure it's fixed for consistent placement */
-  bottom: 20px; /* Distance from the bottom of the screen */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  z-index: 1000; /* Ensure it's above other elements */
+  position: absolute;
+  top: 20px; /* Letakkan elemen induk di atas skrin */
+  right: 20px; /* Letakkan elemen di penjuru kanan atas */
+  z-index: 1000; /* Pastikan berada di atas kanvas */
   display: flex;
-  flex-direction: row; /* Arrange buttons side by side */
-  gap: 10px; /* Add spacing between buttons */
+  flex-direction: column; /* Susun butang secara menegak */
+  gap: 10px; /* Jarak antara butang */
 }
 
 .language-selection button {
@@ -76,38 +81,6 @@ header {
   transform: scale(0.95);
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .synopsis {
-    padding: 10px;
-    font-size: 1em;
-  }
 
-  .language-selection {
-    gap: 8px; /* Reduce spacing for smaller screens */
-  }
 
-  .language-selection button {
-    padding: 10px 20px; /* Adjust padding for smaller screens */
-    font-size: 0.9em; /* Slightly smaller font size */
-  }
-}
 
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 1.5em; /* Reduce font size for very small screens */
-  }
-
-  .synopsis h2 {
-    font-size: 1.2em; /* Smaller heading */
-  }
-
-  .synopsis p {
-    font-size: 1em; /* Adjust paragraph size */
-  }
-
-  .language-selection button {
-    padding: 8px 16px; /* Further reduce padding for tiny screens */
-    font-size: 0.8em; /* Smallest font size */
-  }
-}
