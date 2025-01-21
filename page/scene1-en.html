@@ -6,27 +6,26 @@
   <title>Bouncy and Drone Adventure</title>
   <link rel="stylesheet" href="../css/scene-styles.css">
   <script src="../libs/mindar/mindar-image-three.prod.js"></script>
-  <script src="./js/scene1-en.js" type="module"></script>
+  <script src="./js/scene1m-en.js" type="module"></script>
 </head>
 <body>
   <div class="container">
     <!-- Header -->
-    <header class="header">
-    
-    </header>
+    <header class="header"></header>
 
-    <!-- Scanner content will go here -->
+    <!-- Buttons on Top of the Scanner -->
+    <div class="button-container">
+      <button onclick="window.location.href='../index.html'">Back to Home</button>
+      <button onclick="window.location.href='./scene1m-iban.html'">Bahasa Iban</button>
+    </div>
+
+    <!-- Scanner content -->
     <main class="scanner-content">
       <!-- Placeholder for the scanner -->
-      <!-- You can add your AR scanner or other elements here -->
+      <div class="scanner-placeholder">
+        <h2>Scanner View</h2>
+      </div>
     </main>
   </div>
-
-  <!-- Navigation Menu in Footer -->
-  <footer class="language-selection">
-    <button onclick="window.location.href='../index.html'">Back to Home</button>
-    <button onclick="window.location.href='./scene1-iban.html'"> Bahasa Iban</button>
-    
-  </footer>
 </body>
 </html>
