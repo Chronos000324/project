@@ -12,7 +12,19 @@ body {
 }
 
 /* Center the content */
-
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
 
 /* Header */
 .header h1 {
@@ -42,19 +54,18 @@ body {
 
 .language-selection {
   position: absolute;
-  bottom: 20px; /* Distance from the bottom of the screen */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  z-index: 1000; /* Ensure it's above other elements */
+  top: 20px; /* Letakkan elemen induk di atas skrin */
+  right: 20px; /* Letakkan elemen di penjuru kanan atas */
+  z-index: 1000; /* Pastikan berada di atas kanvas */
   display: flex;
-  flex-direction: row; /* Arrange buttons side by side */
-  gap: 10px; /* Add spacing between buttons */
+  flex-direction: column; /* Susun butang secara menegak */
+  gap: 10px; /* Jarak antara butang */
 }
 
 .language-selection button {
   padding: 12px 24px;
   font-size: 1em;
-  color: b;
+  color: white;
   background-color: #4a7c59;
   border: none;
   border-radius: 8px;
@@ -70,8 +81,6 @@ body {
   transform: scale(0.95);
 }
 
-/* Responsive adjustments for smaller screens */
-}
 
 
 
