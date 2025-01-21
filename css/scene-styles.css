@@ -71,15 +71,6 @@ body {
 }
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-  .language-selection {
-    gap: 8px; /* Reduce spacing for smaller screens */
-  }
-
-  .language-selection button {
-    padding: 10px 20px; /* Adjust padding for smaller screens */
-    font-size: 0.9em; /* Slightly smaller font size */
-  }
 }
 
 
